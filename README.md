@@ -15,6 +15,11 @@ Install driver from https://www.silabs.com/products/development-tools/software/u
 pip install pydobot
 ```
 
+Install for CL:
+---
+
+Copy pydobot to C:\Users\xxx\Downloads\CodeLab-Adapter-3_7_5-win\src\python\lib\site-packages
+
 Example
 ---
 
