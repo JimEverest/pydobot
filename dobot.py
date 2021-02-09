@@ -44,6 +44,17 @@ class Dobot:
         idx = struct.unpack_from('L', response.params, 0)[0]
         return idx
 
+    def _home(self):
+        msg = Message()
+        msg.id = CommunicationProtocolIDs.SET_HOME_CMD.value
+        response = self._send_command(msg)
+
+    def _clear_alarm(self):
+        msg = Message()
+        msg.id = CommunicationProtocolIDs.CLEAR_ALL_ALARMS_STATE.value
+        response = self._send_command(msg)
+
+
     """
         Gets the real-time pose of the Dobot
     """
